@@ -82,3 +82,15 @@ let orders = [
 ];
 
 // Start coding here
+//ให้ใช้ For Loop หาชื่อของสินค้าที่มีราคาต่อชิ้นสูงที่สุดใน orders และนำชื่อสินค้านั้นมาแสดงผลบนหน้าจอ Console
+let pricePerProduct = orders[0].productPrice;
+let mostPricePerProductName = orders[0].productName;
+for (let i = 0; i < orders.length; i++) {
+  if (orders[i].productPrice > pricePerProduct) {
+    pricePerProduct = orders[i].productPrice;
+    mostPricePerProductName = orders[i].productName;
+  }
+}
+console.log(
+  `The most expensive product in orders: ${mostPricePerProductName})`
+);
