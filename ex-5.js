@@ -81,4 +81,23 @@ let orders = [
   },
 ];
 
-// Start coding here
+let highBuy = 0;
+let mostExpensive = 0;
+let idFlag = 0;
+for (let i = 0; i < orders.length; i++) {
+  if (i === 0) {
+    highBuy = orders[i].productPrice;
+  } else if (highBuy < orders[i].productPrice) {
+    highBuy = orders[i].productPrice * orders[i].productQuantity;
+    idFlag = orders[i].id;
+  }
+}
+mostExpensive =
+  "The most expensive order is order id " +
+  idFlag +
+  " " +
+  "(" +
+  highBuy +
+  " Bath" +
+  ")";
+console.log(mostExpensive);

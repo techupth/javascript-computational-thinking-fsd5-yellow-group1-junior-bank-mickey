@@ -81,4 +81,10 @@ let orders = [
   },
 ];
 
-// Start coding here
+let totalBuy = 0;
+for (let i = 0; i < orders.length; i++) {
+  totalBuy = orders[i].productPrice * orders[i].productQuantity + totalBuy;
+  console.log(totalBuy);
+}
+
+console.log("Total amount of orders: " + totalBuy + " Bath");
