@@ -97,7 +97,7 @@ mostExpensive =
   idFlag +
   " " +
   "(" +
-  highBuy +
+  highBuy.toLocaleString() +
   " Bath" +
   ")";
 console.log(mostExpensive);

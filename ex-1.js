@@ -87,4 +87,4 @@ for (let i = 0; i < orders.length; i++) {
   console.log(totalBuy);
 }
 
-console.log("Total amount of orders: " + totalBuy + " Bath");
+console.log("Total amount of orders: " + totalBuy.toLocaleString() + " Bath");

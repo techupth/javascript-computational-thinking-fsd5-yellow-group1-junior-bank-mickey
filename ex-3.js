@@ -88,4 +88,8 @@ for (let i = 0; i < orders.length; i++) {
   }
 }
 
-console.log("Total paid amount of Birdie Shepland: " + totalBirdyBuy + " Bath");
+console.log(
+  "Total paid amount of Birdie Shepland: " +
+    totalBirdyBuy.toLocaleString() +
+    " Bath"
+);

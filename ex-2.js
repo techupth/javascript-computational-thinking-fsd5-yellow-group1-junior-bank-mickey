@@ -88,4 +88,7 @@ for (let i = 0; i < orders.length; i++) {
       orders[i].productPrice * orders[i].productQuantity + totalCreditBuy;
   }
 }
-console.log("Paid by JCB credit card amount: " + totalCreditBuy + " Bath");
+
+console.log(
+  "Paid by JCB credit card amount: " + totalCreditBuy.toLocaleString() + " Bath"
+);
