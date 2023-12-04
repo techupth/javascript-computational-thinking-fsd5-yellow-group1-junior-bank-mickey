@@ -83,7 +83,7 @@ let orders = [
 
 // Start coding here
 let paidTotalAmount = orders[0].productPrice * orders[0].productQuantity;
-let orderId = orders[0].id;
+let orderId;
 for (let i = 0; i < orders.length; i++) {
   if (orders[i].productPrice * orders[i].productQuantity > paidTotalAmount) {
     paidTotalAmount = orders[i].productPrice * orders[i].productQuantity;
